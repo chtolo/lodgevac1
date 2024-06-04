@@ -8,9 +8,11 @@ app = Flask(__name__, static_folder='assets')
 
 # Configuration de la base de données MySQL
 app.config['MYSQL_HOST'] = 'localhost'
+app.config['MYSQL_PORT'] = 3320
 app.config['MYSQL_USER'] = 'root'
 app.config['MYSQL_PASSWORD'] = ''
 app.config['MYSQL_DB'] = 'mydb'
+
 
 mysql = MySQL(app)
 
